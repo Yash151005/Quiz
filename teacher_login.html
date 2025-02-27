@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student login</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1F2D5A; 
+        }
+        
+        .login_box{
+            max-width: 900px;
+            justify-content: center;
+            margin: 50px auto;
+            padding-top: 20px;
+            background: white;
+            box-shadow: 0px 0px 15px rgb(65, 65, 65);
+            border-radius: 8px;
+            width:400px;
+            background-color: rgb(189, 215, 237);
+        
+        }
+        h2{
+            text-align: center;
+            color: rgb(4, 4, 95);
+        }
+
+        input{
+            border-radius: 7px;
+            border: solid 0.2px rgb(90, 89, 89);
+            height: 20px;
+        }
+
+        form{
+            display: grid;
+            padding: 10px;
+            margin: 10px;
+            gap: 10px;
+        }
+        button{
+            display: block;
+            margin: 10px auto;
+            width: 60px;
+            margin-top: 25px;
+            height: 30PX;
+            border-radius: 6PX;
+            border: none;
+            background-color: rgb(4, 4, 95);
+            color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color: rgb(103, 103, 214);
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transform: scale(1.1); /* Slightly enlarge the element */
+            transition: transform 0.1s ease-in-out; /* Smooth transition */
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .options label{
+            padding-top: 1px;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            color: rgb(4, 4, 95);
+            font-weight: bold;
+        }
+
+        .forgot-password:hover {
+            color: rgb(103, 103, 214);
+        }
+    </style>
+</head>
+<body>
+    <div class="login_box">
+        <h2>Teacher Login</h2>
+        <form action="#" method="" onclick="">
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Password:</label>
+                <input type="password" id="password" name="password">
+
+                <div class="options">
+                    <label> <input type="checkbox" name="remember">Remember Me</label>
+                    <a href="forgot_password.html?from=teacher" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
