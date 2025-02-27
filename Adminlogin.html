@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="Adminlogin.css">
+    <script>
+        function generateCaptcha() {
+            let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById('captcha-box').textContent = captcha;
+        }
+        
+        function validateCaptcha() {
+            let inputCaptcha = document.getElementById('captcha-input').value;
+            let generatedCaptcha = document.getElementById('captcha-box').textContent;
+            if (inputCaptcha !== generatedCaptcha) {
+                alert('Incorrect Captcha. Try again!');
+                return false;
+            }
+            return true;
+        }
+        
+        window.onload = generateCaptcha;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Login</h2>
+        <form action="#" method="post" onsubmit="return validateCaptcha()">
+            <label for="username">Username</label>
+            <input type="text" id="username"  placeholder="parag@gmail.com" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Strong Password" name="password" required >
+            
+            <div class="captcha">
+                <input type="text" id="captcha-input" placeholder="Enter Captcha" required>
+                <span id="captcha-box" class="captcha-box"></span>
+                <button type="button" onclick="generateCaptcha()">⟳</button>
+            </div>
+            
+            <button type="submit">Login</button>
+            <p class="signup-link">Don't have an account?
+            <br>
+            <a href="admin_signup.html">Sign up here</a></p>
+        </form>
+    </div>
+</body>
+</html>

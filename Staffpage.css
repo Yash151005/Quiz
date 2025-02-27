@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif; /* Set a basic font */
+    background:url('background.jpg') no-repeat center center/cover;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 160vh; /* Full viewport height */
+    
+}
+
+.container {
+    
+    background-color: rgb(242, 205, 244); /* White background for the form */
+    padding: 24px; /* Padding inside the container */
+    padding-top: 17px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px; /* Fixed width for the form */
+    height: 863px;
+    
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: rgb(58, 1, 138); /* Dark gray color for the text */
+}
+
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+label {
+    margin-top: 17px; /* Space above labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+input {
+    padding: 10px; /* Padding inside input fields */
+    margin-top: 5px; /* Space above input fields */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for input text */
+}
+
+button {
+    margin-top: 15px; /* Space above buttons */
+    padding: 10px; /* Padding inside buttons */
+    background-color: rgb(65, 3, 152); /* Blue background for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+
+.captcha {
+    display: flex; /* Use flexbox for captcha layout */
+    align-items: center; /* Align items vertically centered */
+    margin-top: 15px; /* Space above captcha section */
+}
+
+.captcha-box {
+    background: rgb(58, 1, 138); /* Blue background for captcha box */
+    color: white; /* White text color */
+    padding: 5px 10px; /* Padding inside captcha box */
+    border-radius: 4px; /* Rounded corners for captcha box */
+    font-weight: bold; /* Bold text for captcha */
+    margin-right: 10px; /* Space between captcha box and button */
+}
+
+.refresh-btn {
+    margin-top:2px;
+    background:rgb(69, 1, 164); /* No background for the button */
+    border: none; /* No border */
+    color: hsl(213, 21%, 92%); /* Blue color for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size for the button */
+    margin-right: 15px; /* Space between button and label */
+    margin-left: 15px; 
+}
+
+.refresh-btn:hover {
+    text-decoration:underline; /*on hover */
+}
+
+.signup-link {
+    text-align: center; /* Center the signup link */
+    margin-top: 15px; /* Space above signup link */
+}
+
+.signup-link a {
+    color:rgb(58, 1, 138); /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.signup-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
