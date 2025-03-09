@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +23,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    text-align: center;
 }
 
-/* Heading Styling */
+/* Heading */
 h2 {
-    text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
@@ -35,14 +35,16 @@ h2 {
 /* Form Group */
 .form-group {
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #1d1c1c;
+    color: #555;
 }
 
+.form-group select, 
 .form-group input {
     width: 100%;
     padding: 10px;
@@ -51,12 +53,11 @@ h2 {
     font-size: 16px;
 }
 
-.form-group input:focus {
-    border-color: #007bff;
-    outline: none;
+.form-group input[type="file"] {
+    padding: 5px;
 }
 
-/* Submit Button */
+/* Button */
 button {
     width: 100%;
     padding: 10px;
@@ -66,6 +67,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {

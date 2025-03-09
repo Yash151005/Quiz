@@ -7,22 +7,27 @@
 
 /* Body Styling */
 body {
+    margin-top:110px;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 /* Form Container */
 .form-container {
     background-color: white;
-    padding: 30px;
+    margin-top:30px;
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right:30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+    height: 900px;
 }
 
 /* Heading Styling */
@@ -34,16 +39,17 @@ h2 {
 
 /* Form Group */
 .form-group {
-    margin-bottom: 15px;
+    margin-top:30px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #1d1c1c;
+    color: #555;
 }
 
-.form-group input {
+.form-group input, .form-group select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -51,14 +57,14 @@ h2 {
     font-size: 16px;
 }
 
-.form-group input:focus {
+.form-group input:focus, .form-group select:focus {
     border-color: #007bff;
     outline: none;
 }
 
-/* Submit Button */
+/* Buttons */
 button {
-    width: 100%;
+    width: 48%;
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -66,8 +72,23 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    margin: 5px 0;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+.remove-btn {
+    background-color: #ff3b3b;
+}
+
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Button Container */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
 }

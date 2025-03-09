@@ -1,0 +1,146 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1F2D5A;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px; /* Fixed header height */
+            z-index: 100;
+        }
+
+        .header_top {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 0;
+            font-size: px;
+        }
+
+        .logout-btn {
+            position: fixed;
+            right: 15px;
+            top: 15px;
+            padding: 8px 15px;
+            background-color: rgb(246, 34, 34);
+            color: black;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .logout-btn:hover {
+            background-color: darkred;
+        }
+
+        .dashboard-container {
+            display: flex;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #1F2D5A;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 60px;
+            left:0px;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #3a4d8f;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            margin-left: 250px; /* Matches sidebar width */
+            margin-top: 60px;
+            padding-bottom: 70px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        select {
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #1F2D5A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #3a4d8f;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgb(59, 58, 58);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            height: 40px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }

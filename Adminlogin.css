@@ -8,16 +8,15 @@ body {
     margin: 0;
 }
 
-
 .container {
-    background-color:rgb(232, 209, 249);
+    background-color: rgb(232, 209, 249);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 380px;
     border-color: rgb(102, 26, 172);
-    border: width 3px;;
+    border: 3px solid rgb(102, 26, 172);
 }
 
 h2 {
@@ -38,8 +37,8 @@ label {
 }
 
 input {
-    padding: 10px;
-    margin-top: 5px;
+    padding: 15px;
+    margin-top: 10px;
     border: 1px solid #004080;
     border-radius: 5px;
     font-size: 16px;
@@ -66,14 +65,42 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    font-size: 16px;
 }
 
 .captcha-box {
     background: #004080;
     color: white;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 18px;
+    min-width: 100px; /* Ensures the CAPTCHA box has enough space */
+    text-align: center;
+}
+
+#captcha-input {
+    padding: 10px;
+    border: 1px solid #004080;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 60%; /* Takes up more space, making it easier for users */
+}
+
+button[type="button"] {
+    background-color: transparent;
+    border: 1px solid #004080;
+    padding: 6px 12px;
+    color: #004080;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #e6e6e6;
 }
 
 .signup-link {
